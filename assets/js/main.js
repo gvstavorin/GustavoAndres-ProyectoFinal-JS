@@ -251,7 +251,6 @@ const urls = [
   '../assets/json/dietasyejercicios.json',
   'https://raw.githubusercontent.com/gvstavorin/GustavoAndres-ProyectoFinal-JS/main/assets/json/dietasyejercicios.json'
 ];
-
 async function obtenerDatosJSON(urls) {
   for (const url of urls) {
     try {
