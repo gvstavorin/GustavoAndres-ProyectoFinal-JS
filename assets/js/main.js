@@ -247,15 +247,23 @@ document.getElementById('formularioContactos').addEventListener('submit', Enviar
 
 //cargamos la api o json que tenemos con datos
 const dietasygym = '../assets/json/dietasyejercicios.json';
+const urls = [
+  '../assets/json/dietasyejercicios.json',
+  'https://raw.githubusercontent.com/gvstavorin/GustavoAndres-ProyectoFinal-JS/main/assets/json/dietasyejercicios.json'
+];
 
-async function obtenerDatosJSON() {
-  try {
-      const response = await fetch(dietasygym);
-      const datos = await response.json();
-      return datos;
-  } catch (error) {
-      console.error('Error al obtener datos del JSON:', error);
+async function obtenerDatosJSON(urls) {
+  for (const url of urls) {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        return await response.json();
+      }
+    } catch (error) {
+      console.error(`Error al cargar JSON desde ${url}:`, error);
+    }
   }
+  throw new Error('Todas las solicitudes JSON fallaron');
 }
 
 
@@ -575,7 +583,7 @@ function obtenerRangoImcporUsuario(){
             </div>
        </div>`;
         }
-        obtenerDatosJSON()
+        obtenerDatosJSON(urls)
   .then(datos => {
 
       const dietaRutina = datos.dietas.find(d => d.rango_imc === datosImc.rangoObesidad)
