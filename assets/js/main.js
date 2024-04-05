@@ -248,9 +248,9 @@ document.getElementById('formularioContactos').addEventListener('submit', Enviar
 //cargamos la api o json que tenemos con datos
 const dietasygym = '../assets/json/dietasyejercicios.json';
 const urls = [
+  '../assets/json/dietasyejercicios.json',
   'https://raw.githubusercontent.com/gvstavorin/GustavoAndres-ProyectoFinal-JS/main/assets/json/dietasyejercicios.json'
 ];
-
 async function obtenerDatosJSON(urls) {
   for (const url of urls) {
     try {
