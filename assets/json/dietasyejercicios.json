@@ -1,0 +1,102 @@
+{
+    "dietas": [
+      {
+        "rango_imc": "Bajo peso",
+        "descripcion": "Dieta rica en proteínas y carbohidratos saludables. Incluir alimentos como carne magra, pescado, huevos, legumbres, frutas y verduras.",
+        "ejemplo_diario": [
+          "Desayuno: Huevos revueltos con espinacas, tostadas integrales y aguacate.",
+          "Almuerzo: Ensalada de quinoa con pollo a la parrilla, vegetales mixtos y aderezo de limón.",
+          "Merienda: Batido de proteínas con frutas.",
+          "Cena: Salmón al horno con espárragos asados y batata al horno."
+        ]
+      },
+      {
+        "rango_imc": "Normal",
+        "descripcion": "Dieta equilibrada que incluye una variedad de alimentos de todos los grupos alimenticios en porciones adecuadas.",
+        "ejemplo_diario": [
+          "Desayuno: Avena con frutas frescas, nueces y yogur griego.",
+          "Almuerzo: Pechuga de pollo a la plancha con arroz integral, brócoli al vapor y ensalada mixta.",
+          "Merienda: Batido de frutas con proteínas.",
+          "Cena: Ensalada de salmón con aguacate, tomate, pepino y aderezo de aceite de oliva y limón."
+        ]
+      },
+      {
+        "rango_imc": "Sobrepeso",
+        "descripcion": "Dieta baja en calorías pero rica en nutrientes. Reducir las porciones y evitar alimentos procesados y altos en grasas saturadas.",
+        "ejemplo_diario": [
+          "Desayuno: Batido de proteínas con espinacas, plátano y leche de almendras.",
+          "Almuerzo: Ensalada de garbanzos con atún en agua, vegetales variados y aderezo de vinagreta balsámica.",
+          "Merienda: Yogur griego con frutas.",
+          "Cena: Pechuga de pavo al horno con puré de coliflor, zanahorias al vapor y ensalada verde."
+        ]
+      },
+      {
+        "rango_imc": "Obesidad grado 1",
+        "descripcion": "Dieta controlada en calorías, baja en grasas y azúcares refinados. Aumentar la ingesta de vegetales, frutas y alimentos integrales.",
+        "ejemplo_diario": [
+          "Desayuno: Tostadas de pan integral con aguacate y tomate, acompañadas de huevos revueltos.",
+          "Almuerzo: Filete de salmón a la parrilla con quinoa, vegetales asados y ensalada de espinacas.",
+          "Merienda: Batido de proteínas con frutas y yogur griego.",
+          "Cena: Ensalada de pollo con aguacate, nueces, uvas, queso feta y aderezo de vinagreta."
+        ]
+      },
+      {
+        "rango_imc": "Obesidad grado 2",
+        "descripcion": "Dieta controlada en calorías, baja en grasas y azúcares refinados. Aumentar la ingesta de vegetales, frutas y alimentos integrales.",
+        "ejemplo_diario": [
+          "Desayuno: Tostadas de pan integral con aguacate y tomate, acompañadas de huevos revueltos.",
+          "Almuerzo: Filete de salmón a la parrilla con quinoa, vegetales asados y ensalada de espinacas.",
+          "Merienda: Batido de proteínas con frutas y yogur griego.",
+          "Cena: Ensalada de pollo con aguacate, nueces, uvas, queso feta y aderezo de vinagreta."
+        ]
+      },
+      {
+        "rango_imc": "Obesidad grado 3",
+        "descripcion": "Dieta controlada en calorías, baja en grasas y azúcares refinados. Aumentar la ingesta de vegetales, frutas y alimentos integrales.",
+        "ejemplo_diario": [
+          "Desayuno: Tostadas de pan integral con aguacate y tomate, acompañadas de huevos revueltos.",
+          "Almuerzo: Filete de salmón a la parrilla con quinoa, vegetales asados y ensalada de espinacas.",
+          "Merienda: Batido de proteínas con frutas y yogur griego.",
+          "Cena: Ensalada de pollo con aguacate, nueces, uvas, queso feta y aderezo de vinagreta."
+        ]
+      }
+    ],
+    "ejercicios": [
+      {
+        "rango_imc": "Bajo peso",
+        "descripcion": "Realizar ejercicios de fuerza para aumentar la masa muscular. Ejemplos: levantamiento de pesas, flexiones, sentadillas.",
+        "frecuencia": "3-4 veces por semana",
+        "duracion": "30-45 minutos por sesión"
+      },
+      {
+        "rango_imc": "Normal",
+        "descripcion": "Mantener un estilo de vida activo con ejercicios aeróbicos y de fuerza. Ejemplos: caminar, correr, nadar, yoga.",
+        "frecuencia": "5 veces por semana",
+        "duracion": "30-60 minutos por sesión"
+      },
+      {
+        "rango_imc": "Sobrepeso",
+        "descripcion": "Incorporar ejercicios cardiovasculares para quemar calorías y ejercicios de fuerza para tonificar los músculos. Ejemplos: correr, ciclismo, entrenamiento de intervalos, entrenamiento con pesas.",
+        "frecuencia": "5 veces por semana",
+        "duracion": "45-60 minutos por sesión"
+      },
+      {
+        "rango_imc": "Obesidad grado 1",
+        "descripcion": "Enfocarse en ejercicios cardiovasculares para quemar grasa y mejorar la salud cardiovascular. Ejemplos: natación, aeróbicos acuáticos, caminatas largas.",
+        "frecuencia": "6 veces por semana",
+        "duracion": "60 minutos por sesión"
+      },
+      {
+        "rango_imc": "Obesidad grado 2",
+        "descripcion": "Ejercicios de resistencia para aumentar la fuerza y la resistencia muscular. Ejemplos: entrenamiento con pesas, entrenamiento de circuito.",
+        "frecuencia": "3-4 veces por semana",
+        "duracion": "45-60 minutos por sesión"
+      },
+      {
+        "rango_imc": "Obesidad grado 3",
+        "descripcion": "Practicar ejercicios de flexibilidad para mejorar la movilidad y prevenir lesiones. Ejemplos: estiramientos, yoga, Pilates.",
+        "frecuencia": "3 veces por semana",
+        "duracion": "20-30 minutos por sesión"
+      }
+    ]
+  }
