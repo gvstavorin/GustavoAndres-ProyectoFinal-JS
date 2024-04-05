@@ -1,4 +1,4 @@
-//funciones del template  (solo funcionares para diseno)
+//funciones del template  (solo funciones de diseno (ignorar))
 (function() {
   "use strict";
 
@@ -193,6 +193,14 @@
   });
 
 })();
+// fin funsiones diseno
+
+
+
+
+//JAVASCRIPT  APLICADO -- COMO LIBRERIA INTEGRE SWEETALERT Y EMAILJS
+
+
 
 
 //funciones email JS (envio de correo por formulario contacto)
@@ -236,8 +244,6 @@ function EnviarCorreoEmailJs(event){
 document.getElementById('formularioContactos').addEventListener('submit', EnviarCorreoEmailJs);
 
 
-//FUNCIONES PARA PROGRAMA DE CALCULCO DE IMC, DIETAS Y  EJERCICIOS RANDOMS
-
 
 //cargamos la api o json que tenemos con datos
 const dietasygym = '../assets/json/dietasyejercicios.json';
@@ -254,14 +260,12 @@ async function obtenerDatosJSON() {
 
 
 
-// FILTRAR VISTAS
+// FILTRAR elementos al cargar pagina
 document.getElementById("features").style.display = "none";
 document.getElementById("contact").style.display = "none";
 document.getElementById("rutinaGenerica").style.display = "none";
 
 
-
-//
 
 
 
@@ -548,7 +552,7 @@ function CalcularImc(datos){
 }
 
 
-// funcion para obtener datos de json por datos del usuario
+// funcion para obtener datos de json por datos del usuario 
 function obtenerRangoImcporUsuario(){
 
   try{

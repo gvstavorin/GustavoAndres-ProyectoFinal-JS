@@ -29,6 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
@@ -42,252 +43,262 @@
       <a href="#about" class=""></a>
     </div>
   </header>
-  
   <main id="home">
-  <section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container" data-aos="fade-up">
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-        <div class="col-xl-6 col-lg-8">
-          <h1>Bienvenido a <span>BodyCheck: IMC y Planes de Estilo de Vida</span></h1>
-          <h2>IMC & Planes de Vida: Calcula tu Índice de Masa Corporal (IMC) y accede a planes personalizados de dieta y ejercicio para alcanzar un estilo de vida saludable.</h2>
-        </div>
-      </div>
-      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-        <div class="col-xl-2 col-md-4">
-          <a href="#principal">
-            <div class="icon-box">
-              <i class="ri-store-line"></i>
-              <h3>COMENCEMOS</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-  </section>
-<section id="principal">
-  <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
-      <div class="row">
-        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-          <img src="assets/img//img/fondo3.jpg" class="img-fluid" alt=" esperando" width="70%">
-        </div>
-        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-          <h3 style="margin-top: 30%;">Ingresa tus datos para calcular tu <span>IMC</span></h3>
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <div class="container" data-aos="zoom-in" style="margin-top: 2rem;">
-      <form id="formularioIMC" class="formulario-imc">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <label for="peso">Nombre </label>
-            <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <label for="peso">Apellido </label>
-            <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido" required>
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-xl-6 col-lg-8">
+            <h1>Bienvenido a <span>BodyCheck: IMC y Planes de Estilo de Vida</span></h1>
+            <h2>IMC & Planes de Vida: Calcula tu Índice de Masa Corporal (IMC) y accede a planes personalizados de dieta
+              y ejercicio para alcanzar un estilo de vida saludable.</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 form-group mt-3 mt-md-3">
-            <label for="peso">Edad </label>
-            <input type="number" class="form-control" name="edad" id="edad" placeholder="Edad" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-3">
-            <label for="peso">Sexo </label>
-            <select id="sexo" class="form-select" aria-label="Default select example" required>
-              <option selected>Elegir sexo</option>
-              <option value="hombre">Hombre</option>
-              <option value="mujer">Mujer</option>
-            </select>
+        <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+          <div class="col-xl-2 col-md-4">
+            <a href="#principal">
+              <div class="icon-box">
+                <i class="ri-store-line"></i>
+                <h3>COMENCEMOS</h3>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 form-group mt-3 mt-md-3">
-            <label for="peso">Altura (Ingresar en CM)" </label>
-            <input type="number" class="form-control" name="altura" id="altura" placeholder="Altura" min="1" max="250"
-              required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-3">
-            <label for="peso">Peso (ingresar en Kg):</label>
-            <input type="number" class="form-control" min="1" max="300" name="peso" id="peso" placeholder="Peso"
-              required>
-          </div>
-        </div>
-        <div class="my-3">
-        </div>
-        <div class="text-center"><button type="submit" class="btn btn-outline-secondary">INGRESAR DATOS</button></div>
-      </form>
-    </div>
-  </section>
-<!-- ======= MOSTRAR DATOS IMC y  MENU ======= -->
-<section id="features" class="features">
-  <div class="container" data-aos="fade-up">
-    <div class="row">      
-      <div class="image col-lg-6" style='background-image: url("assets/img/features.jpg");' data-aos="fade-right"></div>
-      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-        <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-          <i class="bx bx-receipt"></i>
-          <h4>Hola <span id="datoNombre"></span> <span id="datoApellido"></span></h4>
-          <p>Segun los datos que nos proporcionaste te encuentras en un estado de  <strong id="rangoImc"> relleno </strong> con un IMC de  <strong id="datoImc"> </strong></p>
-        </div>
-        <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-        <i class="bx bx-cube-alt"></i>
-          <h4>Volver a cacular IMC</h4>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-          <div class="d-flex justify-content-center">
-            <button id="volverIngresarDatos" type="button" class="btn btn-warning  ">Ir</button>
-          </div>
-        </div>
-        <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-          <i class="bx bx-images"></i>
-          <h4>Prueba una de nuestras Dietas y ejercicios para ti</h4>
-          <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-          <div class="d-flex justify-content-center">
-            <button id ='irARutinayGym' type="button" class="btn btn-warning  ">Ir</button>
-          </div>
-
-        </div>
-        <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-          <i class="bx bx-shield"></i>
-          <h4>Contactate con un profesional</h4>
-          <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-          <div class="d-flex justify-content-center d-grid">
-            <button id="IrAformularioContacto" type="button" class="btn btn-warning ">Ir</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- End Features Section -->
-
-<!-- ======= MOSTRAR DIETA Y RUTINA====== -->
-<section id="rutinaGenerica" class="features">
-  
-  <section id="cta" class="cta">
-    <div class="container" data-aos="zoom-in">
-
-      <div  id='tituloRutinaGenerica'class="text-center">
-      </div>
-   </div>
-   </section>
- 
- <section id="counts" class="counts">
-  <div class="container" data-aos="fade-up">
-    <div class="container" data-aos="fade-up">
-      <div class="row no-gutters">
-       <div class="col-xl d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
-         <div class="content d-flex flex-column justify-content-center">
-           <h3>Transforma tu Bienestar: Dieta y Rutina Personalizadas para Mejorar tu Salud y Condición Física</h3>
-           <p>
-           Para mejorar tu condición física y salud, hemos preparado una dieta personalizada y una rutina de ejercicios adaptadas específicamente a tus necesidades. ¡Estamos aquí para ayudarte a alcanzar tus objetivos de forma segura y efectiva!
-           </p>
-           <div class="row">
-             <div class="col-md-6 d-md-flex align-items-md-stretch">
-               <div id="descripcion-dieta" class="count-box">
-                 
-                 </div>
-             </div>
-             <div class="col-md-6 d-md-flex align-items-md-stretch">
-               <div  id="descripcion-gym" class="count-box">
-  
-               </div>
-             </div>
-             <div class="text-center">
-              <button  id="BotonVolverMenuRu" class="btn btn-outline-secondary  btn-warning ">Volver </button>
-  
-            </div>
-
- 
-           </div>
-         </div><!-- End .content-->
-       </div>
-     </div>
-   </div>
-  </div>
-</section>
-
-<!--FIN -->
-
-</section>
-<!--FIN -->
- <!-- ======= CONTACTARSE  ======= -->
- <section id="contact" class="contact">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>Contactate</h2>
-      <p>Donde estamos </p>
-    </div>
-
-    <div>
-      <iframe style="border:0; width: 100%; height: 270px;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.636447173919!2d-70.70447182278436!3d-33.249826573469655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662b944d88b61ab%3A0xbf2f24b685b6d182!2sSta.%20Gemita%2021%2C%20Chicureo%2C%20Colina%2C%20Región%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1712098792439!5m2!1ses-419!2scl"frameborder="0" allowfullscreen></iframe>
-    </div>
-
-    <div class="row mt-5">
-
-      <div class="col-lg-4">
-        <div class="info">
-          <div class="address">
-            <i class="bi bi-geo-alt"></i>
-            <h4>Direccion:</h4>
-            <p>Santa Gemita 21, Chicureo, Colina </p>
-          </div>
-
-          <div class="email">
-            <i class="bi bi-envelope"></i>
-            <h4>Correo:</h4>
-            <p>contactojdm@jdmgym.com</p>
-          </div>
-
-          <div class="phone">
-            <i class="bi bi-phone"></i>
-            <h4>Telefono:</h4>
-            <p>+562 5589 55488 55</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="col-lg-8 mt-5 mt-lg-0">
-
-        <form  id="formularioContactos">
+    </section>
+    <section id="principal">
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
           <div class="row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="nombreCorreo" placeholder="Nombre" required>
+            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+              <img src="assets/img//img/fondo3.jpg" class="img-fluid" alt=" esperando" width="70%">
             </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="correo" placeholder="Correo" required>
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+              <h3 style="margin-top: 30%;">Ingresa tus datos para calcular tu <span>IMC</span></h3>
+              <p></p>
             </div>
           </div>
-          <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="asuntoCorreo" placeholder="Asunto" required>
+        </div>
+        <div class="container" data-aos="zoom-in" style="margin-top: 2rem;">
+          <form id="formularioIMC" class="formulario-imc">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label for="peso">Nombre </label>
+                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <label for="peso">Apellido </label>
+                <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 form-group mt-3 mt-md-3">
+                <label for="peso">Edad </label>
+                <input type="number" class="form-control" name="edad" id="edad" placeholder="Edad" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-3">
+                <label for="peso">Sexo </label>
+                <select id="sexo" class="form-select" aria-label="Default select example" required>
+                  <option selected>Elegir sexo</option>
+                  <option value="hombre">Hombre</option>
+                  <option value="mujer">Mujer</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 form-group mt-3 mt-md-3">
+                <label for="peso">Altura (Ingresar en CM)" </label>
+                <input type="number" class="form-control" name="altura" id="altura" placeholder="Altura" min="1"
+                  max="250" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-3">
+                <label for="peso">Peso (ingresar en Kg):</label>
+                <input type="number" class="form-control" min="1" max="300" name="peso" id="peso" placeholder="Peso"
+                  required>
+              </div>
+            </div>
+            <div class="my-3">
+            </div>
+            <div class="text-center"><button type="submit" class="btn btn-outline-secondary">INGRESAR DATOS</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- ======= MOSTRAR DATOS IMC y  MENU ======= -->
+      <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="image col-lg-6" style='background-image: url("assets/img/features.jpg");' data-aos="fade-right">
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+              <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                <i class="bx bx-receipt"></i>
+                <h4>Hola <span id="datoNombre"></span> <span id="datoApellido"></span></h4>
+                <p>Segun los datos que nos proporcionaste te encuentras en un estado de <strong id="rangoImc"> relleno
+                  </strong> con un IMC de <strong id="datoImc"> </strong></p>
+              </div>
+              <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Volver a cacular IMC</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                <div class="d-flex justify-content-center">
+                  <button id="volverIngresarDatos" type="button" class="btn btn-warning  ">Ir</button>
+                </div>
+              </div>
+              <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                <i class="bx bx-images"></i>
+                <h4>Prueba una de nuestras Dietas y ejercicios para ti</h4>
+                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                <div class="d-flex justify-content-center">
+                  <button id='irARutinayGym' type="button" class="btn btn-warning  ">Ir</button>
+                </div>
+
+              </div>
+              <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                <i class="bx bx-shield"></i>
+                <h4>Contactate con un profesional</h4>
+                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                <div class="d-flex justify-content-center d-grid">
+                  <button id="IrAformularioContacto" type="button" class="btn btn-warning ">Ir</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" id="mensaje" placeholder="Escriba su mensaje" required></textarea>
+
+        </div>
+      </section>
+      <!-- End Features Section -->
+
+      <!-- ======= MOSTRAR DIETA Y RUTINA====== -->
+      <section id="rutinaGenerica" class="features">
+
+        <section id="cta" class="cta">
+          <div class="container" data-aos="zoom-in">
+
+            <div id='tituloRutinaGenerica' class="text-center">
+            </div>
           </div>
-          <div class="my-3">
-      
+        </section>
+
+        <section id="counts" class="counts">
+          <div class="container" data-aos="fade-up">
+            <div class="container" data-aos="fade-up">
+              <div class="row no-gutters">
+                <div class="col-xl d-flex align-items-stretch" data-aos="fade-left" data-aos-delay="100">
+                  <div class="content d-flex flex-column justify-content-center">
+                    <h3>Transforma tu Bienestar: Dieta y Rutina Personalizadas para Mejorar tu Salud y Condición Física
+                    </h3>
+                    <p>
+                      Para mejorar tu condición física y salud, hemos preparado una dieta personalizada y una rutina de
+                      ejercicios adaptadas específicamente a tus necesidades. ¡Estamos aquí para ayudarte a alcanzar tus
+                      objetivos de forma segura y efectiva!
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6 d-md-flex align-items-md-stretch">
+                        <div id="descripcion-dieta" class="count-box">
+
+                        </div>
+                      </div>
+                      <div class="col-md-6 d-md-flex align-items-md-stretch">
+                        <div id="descripcion-gym" class="count-box">
+
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button id="BotonVolverMenuRu" class="btn btn-outline-secondary  btn-warning ">Volver </button>
+
+                      </div>
+
+
+                    </div>
+                  </div><!-- End .content-->
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-outline-secondary  btn-warning " >Enviar  </button>
-            <button  id="BotonVolverMenu" class="btn btn-outline-secondary  btn-warning ">Volver </button>
+        </section>
+
+        <!--FIN -->
+
+      </section>
+      <!--FIN -->
+      <!-- ======= CONTACTARSE  ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-title">
+            <h2>Contactate</h2>
+            <p>Donde estamos </p>
+          </div>
+
+          <div>
+            <iframe style="border:0; width: 100%; height: 270px;"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.636447173919!2d-70.70447182278436!3d-33.249826573469655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662b944d88b61ab%3A0xbf2f24b685b6d182!2sSta.%20Gemita%2021%2C%20Chicureo%2C%20Colina%2C%20Región%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1712098792439!5m2!1ses-419!2scl"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <div class="row mt-5">
+
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Direccion:</h4>
+                  <p>Santa Gemita 21, Chicureo, Colina </p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Correo:</h4>
+                  <p>contactojdm@jdmgym.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Telefono:</h4>
+                  <p>+562 5589 55488 55</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+
+              <form id="formularioContactos">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="nombreCorreo" placeholder="Nombre" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="correo" placeholder="Correo" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="asuntoCorreo" placeholder="Asunto"
+                    required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" id="mensaje" placeholder="Escriba su mensaje"
+                    required></textarea>
+                </div>
+                <div class="my-3">
+
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-outline-secondary  btn-warning ">Enviar </button>
+                  <button id="BotonVolverMenu" class="btn btn-outline-secondary  btn-warning ">Volver </button>
+
+                </div>
+              </form>
+
+            </div>
 
           </div>
-        </form>
 
-      </div>
+        </div>
+      </section><!-- fin  -->
 
-    </div>
-
-  </div>
-</section><!-- fin  -->
-
-</section>
-</main>
+    </section>
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -300,7 +311,7 @@
               <h3>Gp<span>.</span></h3>
               <p>
                 Santa Gemita 21, Chicureo, Colina<br>
-            
+
                 <strong>Telefono:</strong>+562 5589 55488 55<br>
                 <strong>Correo:</strong> contactojdm@jdmgym.com<br>
               </p>
@@ -326,13 +337,13 @@
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer><!-- fin Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
+
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -340,7 +351,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
+
   <script src="assets/js/main.js"></script>
 
 </body>
